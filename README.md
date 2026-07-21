@@ -47,11 +47,11 @@ Goal: understand the language syntax, core data structures, functions, types, an
 - [x] Error wrapping
 - [x] Sentinel errors
 - [x] `errors.Is`
-- [ ] `defer`
-- [ ] `panic` and `recover`
-- [ ] Package organization
-- [ ] Go modules
-- [ ] Exported and unexported identifiers
+- [x] `defer`
+- [x] `panic` and `recover`
+- [x] Package organization
+- [x] Go modules
+- [x] Exported and unexported identifiers
 - [ ] Working with strings and runes
 - [ ] Basic file handling
 - [ ] JSON encoding and decoding
