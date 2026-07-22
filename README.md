@@ -52,9 +52,9 @@ Goal: understand the language syntax, core data structures, functions, types, an
 - [x] Package organization
 - [x] Go modules
 - [x] Exported and unexported identifiers
-- [ ] Working with strings and runes
-- [ ] Basic file handling
-- [ ] JSON encoding and decoding
+- [x] Working with strings and runes
+- [x] Basic file handling
+- [x] JSON encoding and decoding
 - [ ] Phase 1 final project
 
 ### Phase 1 Final Project
