@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Study Go",
+    "completed": true
+  },
+  {
+    "id": 4,
+    "title": "Build a CLI project",
+    "completed": false
+  }
+]
