@@ -66,5 +66,5 @@ func countLines(filename string) (int, error) {
 }
 
 func scanner() {
-	
+
 }

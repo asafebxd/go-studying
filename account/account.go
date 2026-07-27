@@ -1,15 +1,15 @@
 package account
 
 type Account struct {
-	owner string
+	owner   string
 	balance float64
 }
 
 func New(owner string, initialBalance float64) Account {
 	return Account{
-		owner: owner,
+		owner:   owner,
 		balance: initialBalance,
-	}	
+	}
 }
 
 func (account Account) Owner() string {

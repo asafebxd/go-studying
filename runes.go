@@ -18,12 +18,12 @@ func normalizeName(name string) string {
 func reverseString(text string) string {
 	var reversedText strings.Builder
 
-    for len(text) > 0 {
+	for len(text) > 0 {
 		runeValue, size := utf8.DecodeLastRuneInString(text)
 		reversedText.WriteRune(runeValue)
 		text = text[:len(text)-size]
 	}
-    return reversedText.String()
+	return reversedText.String()
 }
 
 // func reverseString(text string) string {
@@ -37,5 +37,5 @@ func reverseString(text string) string {
 // }
 
 func runesExercise() {
-	
+
 }

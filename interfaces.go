@@ -14,7 +14,7 @@ type Circle struct {
 }
 
 type Rectangle struct {
-	Width float64
+	Width  float64
 	Height float64
 }
 
@@ -33,10 +33,10 @@ func printArea(shape Shape) {
 }
 
 type PaymentProcessor interface {
-	Process(amount float64) string	
+	Process(amount float64) string
 }
 
-type CreditCard struct {}
+type CreditCard struct{}
 type Pix struct{}
 
 func (CreditCard) Process(amount float64) string {
@@ -63,7 +63,6 @@ func identifyType(value any) string {
 		return "unknown"
 	}
 }
-
 
 func interfaces() {
 

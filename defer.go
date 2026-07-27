@@ -34,7 +34,7 @@ func defferedValueCorrected() {
 	value := 5
 
 	defer func() {
-		fmt.Println(value)	
+		fmt.Println(value)
 	}()
 
 	value = 10

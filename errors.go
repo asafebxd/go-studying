@@ -16,7 +16,7 @@ func validateProduct(name string, price float64, stock int) error {
 	}
 
 	if price <= 0 {
-		return errors.New("price must be greater than zero") 
+		return errors.New("price must be greater than zero")
 	}
 
 	if stock < 0 {
@@ -30,7 +30,7 @@ var ErrUserNotFound = errors.New("user not found")
 
 func findUser(users map[int]string, id int) (string, error) {
 	name, ok := users[id]
-	
+
 	if !ok {
 		return "", ErrUserNotFound
 	}

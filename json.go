@@ -6,16 +6,17 @@ import (
 )
 
 type Produto struct {
-	Name string `json:"name"`
-	Price float64  `json:"price"`
-	Stock int `json:"stock"`
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
+	Stock int     `json:"stock"`
 }
 
 func productToJSON(product Produto) (string, error) {
-	data, err := json.Marshal(product)
+	data, err := json.MarshalIndent(product, "", "  ")
 	if err != nil {
 		return "", err
 	}
+
 	return string(data), nil
 }
 
@@ -31,16 +32,16 @@ func productFromJSON(data string) (Produto, error) {
 }
 
 func saveProducts(filename string, products []Produto) error {
-	data, err := json.MarshalIndent(products, "", "	")
+	data, err := json.MarshalIndent(products, "", "  ")
 	if err != nil {
 		return err
 	}
 
 	return os.WriteFile(filename, data, 0644)
-} 
+}
 
 func loadProducts(filename string) ([]Produto, error) {
-	data, err := os.ReadFile(filename) 
+	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
@@ -55,5 +56,5 @@ func loadProducts(filename string) ([]Produto, error) {
 }
 
 func jsonLesson() {
-	
+
 }

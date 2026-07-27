@@ -8,5 +8,10 @@
     "id": 4,
     "title": "Build a CLI project",
     "completed": false
+  },
+  {
+    "id": 5,
+    "title": "Learn project structure",
+    "completed": false
   }
 ]
