@@ -2,11 +2,19 @@ package task
 
 import (
 	"errors"
+	"fmt"
 	"strings"
 )
 
+type NotFoundError struct {
+	ID int
+}
+
+func (e NotFoundError) Error() string {
+	return fmt.Sprintf("task %d not found", e.ID)
+}
+
 var ErrEmptyTitle = errors.New("task title cannot be empty")
-var ErrTaskNotFound = errors.New("task not found")
 
 type Service struct {
 	repository Repository
@@ -63,7 +71,7 @@ func (service *Service) Complete(id int) error {
 	}
 
 	if !CompleteByID(tasks, id) {
-		return ErrTaskNotFound
+		return NotFoundError{ID: id}
 	}
 
 	return service.repository.Save(tasks)
@@ -77,7 +85,7 @@ func (service *Service) Delete(id int) error {
 
 	updatedTasks, found := DeleteByID(tasks, id)
 	if !found {
-		return ErrTaskNotFound
+		return NotFoundError{ID: id}
 	}
 
 	return service.repository.Save(updatedTasks)

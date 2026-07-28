@@ -55,7 +55,7 @@ Goal: understand the language syntax, core data structures, functions, types, an
 - [x] Working with strings and runes
 - [x] Basic file handling
 - [x] JSON encoding and decoding
-- [ ] Phase 1 final project
+- [x] Phase 1 final project
 
 ### Phase 1 Final Project
 
@@ -80,21 +80,21 @@ Goal: learn how professional Go projects are organized and how Go code is common
 
 ### Topics
 
-- [ ] Go modules in depth
-- [ ] `go.mod`
-- [ ] `go.sum`
-- [ ] Package design
-- [ ] `internal` packages
-- [ ] `cmd` directories
-- [ ] Constructor functions
-- [ ] Dependency injection
-- [ ] Small interfaces
-- [ ] Interface placement
-- [ ] Error design
-- [ ] Error wrapping
-- [ ] Custom error types
-- [ ] Configuration patterns
-- [ ] Environment variables
+- [x] Go modules in depth
+- [x] `go.mod`
+- [x] `go.sum`
+- [x] Package design
+- [x] `internal` packages
+- [x] `cmd` directories
+- [x] Constructor functions
+- [x] Dependency injection
+- [x] Small interfaces
+- [x] Interface placement
+- [x] Error design
+- [x] Error wrapping
+- [x] Custom error types
+- [x] Configuration patterns
+- [x] Environment variables
 - [ ] Formatting with `gofmt`
 - [ ] Static analysis with `go vet`
 - [ ] Basic linting

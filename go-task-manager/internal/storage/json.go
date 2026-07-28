@@ -3,6 +3,7 @@ package storage
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 	"os"
 
 	"go-task-manager/internal/task"
@@ -25,7 +26,7 @@ func (repository *JSONRepository) Load() ([]task.Task, error) {
 			return []task.Task{}, nil
 		}
 
-		return nil, err
+		return nil, fmt.Errorf("read tasks file: %w", err)
 	}
 
 	if len(bytes.TrimSpace(data)) == 0 {
@@ -35,7 +36,7 @@ func (repository *JSONRepository) Load() ([]task.Task, error) {
 	var tasks []task.Task
 
 	if err := json.Unmarshal(data, &tasks); err != nil {
-		return nil, err
+		return nil, fmt.Errorf("unmarshal tasks file: %w", err)
 	}
 
 	return tasks, nil
@@ -44,8 +45,12 @@ func (repository *JSONRepository) Load() ([]task.Task, error) {
 func (repository *JSONRepository) Save(tasks []task.Task) error {
 	data, err := json.MarshalIndent(tasks, "", "  ")
 	if err != nil {
-		return err
+		return fmt.Errorf("marshal tasks: %w", err)
 	}
 
-	return os.WriteFile(repository.filename, data, 0644)
+	if err := os.WriteFile(repository.filename, data, 0644); err != nil {
+		return fmt.Errorf("write tasks file: %w", err)
+	}
+
+	return nil
 }

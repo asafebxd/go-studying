@@ -11,7 +11,9 @@ import (
 	"go-task-manager/internal/task"
 )
 
-const filename = "tasks.json"
+type Config struct {
+	TaskFile string
+}
 
 func printUsage() {
 	fmt.Println("Usage:")
@@ -78,8 +80,9 @@ func handleComplete(service *task.Service) {
 	}
 
 	if err := service.Complete(id); err != nil {
-		if errors.Is(err, task.ErrTaskNotFound) {
-			fmt.Printf("Task %d not found\n", id)
+		var notFoundError task.NotFoundError
+		if errors.As(err, &notFoundError) {
+			fmt.Printf("Task %d not found\n", notFoundError.ID)
 			return
 		}
 
@@ -97,8 +100,9 @@ func handleDelete(service *task.Service) {
 	}
 
 	if err := service.Delete(id); err != nil {
-		if errors.Is(err, task.ErrTaskNotFound) {
-			fmt.Printf("Task %d not found\n", id)
+		var notFoundError task.NotFoundError
+		if errors.As(err, &notFoundError) {
+			fmt.Printf("Task %d not found\n", notFoundError.ID)
 			return
 		}
 
@@ -125,7 +129,15 @@ func parseIDArgument() (int, bool) {
 }
 
 func main() {
-	repository := storage.NewJSONRepository("tasks.json")
+	cfg := Config{
+		TaskFile: "tasks.json",
+	}
+
+	if value := os.Getenv("TASKS_FILE"); value != "" {
+		cfg.TaskFile = value
+	}
+
+	repository := storage.NewJSONRepository(cfg.TaskFile)
 	service := task.NewService(repository)
 
 	if len(os.Args) < 2 {
