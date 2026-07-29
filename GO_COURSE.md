@@ -34,45 +34,45 @@ When the student asks for deeper explanation, explain the behavior at both langu
 
 Completed:
 
-- `package main`
-- `func main()`
-- Imports
-- Running with `go run .`
-- Difference between `go run .` and `go run main.go`
-- WSL and VS Code setup
-- Opening a project in a WSL-connected VS Code window
-- Installing Go inside WSL
-- Using the official Go extension in WSL
+- [x] `package main`
+- [x] `func main()`
+- [x] Imports
+- [x] Running with `go run .`
+- [x] Difference between `go run .` and `go run main.go`
+- [x] WSL and VS Code setup
+- [x] Opening a project in a WSL-connected VS Code window
+- [x] Installing Go inside WSL
+- [x] Using the official Go extension in WSL
 
 ### Variables and basic types
 
 Completed:
 
-- `var`
-- `:=`
-- Assignment with `=`
-- Type inference
-- Constants
-- Zero values
-- Multiple assignment
-- Basic types:
-  - `string`
-  - `int`
-  - `float64`
-  - `bool`
-  - `rune`
-  - `byte`
+- [x] `var`
+- [x] `:=`
+- [x] Assignment with `=`
+- [x] Type inference
+- [x] Constants
+- [x] Zero values
+- [x] Multiple assignment
+- [x] Basic types:
+- [x] `string`
+- [x] `int`
+- [x] `float64`
+- [x] `bool`
+- [x] `rune`
+- [x] `byte`
 
 ### Functions
 
 Completed:
 
-- Function parameters
-- Return values
-- Multiple return values
-- Returning expressions directly
-- Matching expression types to declared return types
-- Boolean expressions such as:
+- [x] Function parameters
+- [x] Return values
+- [x] Multiple return values
+- [x] Returning expressions directly
+- [x] Matching expression types to declared return types
+- [x] Boolean expressions such as:
 
 ```go
 return product.Stock > 0
@@ -88,48 +88,48 @@ Important understanding:
 
 Completed:
 
-- Comparison operators
-- `if`
-- `else`
-- `else if`
-- Logical operators:
-  - `&&`
-  - `||`
-  - `!`
-- Short declarations inside `if`
-- `switch`
-- Value-less `switch`
-- Case ordering
+- [x] Comparison operators
+- [x] `if`
+- [x] `else`
+- [x] `else if`
+- [x] Logical operators:
+- [x] `&&`
+- [x] `||`
+- [x] `!`
+- [x] Short declarations inside `if`
+- [x] `switch`
+- [x] Value-less `switch`
+- [x] Case ordering
 
 ### Loops
 
 Completed:
 
-- Standard `for`
-- While-style `for`
-- Infinite loops
-- `break`
-- `continue`
-- Accumulation
-- FizzBuzz
-- Counting even numbers
+- [x] Standard `for`
+- [x] While-style `for`
+- [x] Infinite loops
+- [x] `break`
+- [x] `continue`
+- [x] Accumulation
+- [x] FizzBuzz
+- [x] Counting even numbers
 
 ### Arrays and slices
 
 Completed:
 
-- Arrays
-- Slice literals
-- `append`
-- `make`
-- `len`
-- `cap`
-- Indexing
-- `range`
-- Updating by index
-- Slice expressions
-- Shared backing arrays
-- Copying slices with `copy`
+- [x] Arrays
+- [x] Slice literals
+- [x] `append`
+- [x] `make`
+- [x] `len`
+- [x] `cap`
+- [x] Indexing
+- [x] `range`
+- [x] Updating by index
+- [x] Slice expressions
+- [x] Shared backing arrays
+- [x] Copying slices with `copy`
 
 Important understanding:
 
@@ -142,23 +142,21 @@ Important understanding:
 
 Completed:
 
-- Map literals
-- `make(map[...])`
-- Add and update
-- Delete
-- Iteration
-- Missing keys and zero values
-- Maps as reference-like values
-- Maps of slices
-- Map key restrictions
+- [x] Map literals
+- [x] `make(map[...])`
+- [x] Add and update
+- [x] Delete
+- [x] Iteration
+- [x] Missing keys and zero values
+- [x] Maps as reference-like values
+- [x] Maps of slices
+- [x] Map key restrictions
 
 ### Comma-ok idiom
 
 Completed:
 
-```go
-value, ok := myMap[key]
-```
+- [x] `value, ok := myMap[key]`
 
 Important understanding:
 
@@ -171,15 +169,15 @@ Important understanding:
 
 Completed:
 
-- Struct declarations
-- Named-field initialization
-- Zero values
-- Passing structs by value
-- Pointers to structs
-- Value receivers
-- Pointer receivers
-- Constructor-style functions such as `New`
-- Nested structs
+- [x] Struct declarations
+- [x] Named-field initialization
+- [x] Zero values
+- [x] Passing structs by value
+- [x] Pointers to structs
+- [x] Value receivers
+- [x] Pointer receivers
+- [x] Constructor-style functions such as `New`
+- [x] Nested structs
 
 Important understanding:
 
@@ -191,16 +189,16 @@ Important understanding:
 
 Completed:
 
-- Interface definitions
-- Implicit implementation
-- Small interfaces
-- Multiple concrete implementations
-- Interface method sets
-- Value receiver vs pointer receiver behavior
-- `any`
-- Type assertions
-- Type switches
-- Interfaces near the consumer
+- [x] Interface definitions
+- [x] Implicit implementation
+- [x] Small interfaces
+- [x] Multiple concrete implementations
+- [x] Interface method sets
+- [x] Value receiver vs pointer receiver behavior
+- [x] `any`
+- [x] Type assertions
+- [x] Type switches
+- [x] Interfaces near the consumer
 
 Important understanding:
 
@@ -212,29 +210,29 @@ Important understanding:
 
 Completed:
 
-- Returning `error`
-- `errors.New`
-- `fmt.Errorf`
-- Early returns
-- Propagating errors
-- Wrapping with `%w`
-- Sentinel errors
-- `errors.Is`
-- Returning zero values when an error occurs
+- [x] Returning `error`
+- [x] `errors.New`
+- [x] `fmt.Errorf`
+- [x] Early returns
+- [x] Propagating errors
+- [x] Wrapping with `%w`
+- [x] Sentinel errors
+- [x] `errors.Is`
+- [x] Returning zero values when an error occurs
 
 ### `defer`, `panic`, and `recover`
 
 Completed:
 
-- Deferred execution
-- LIFO order
-- Cleanup
-- Deferred arguments evaluated immediately
-- Deferred closures reading variables later
-- Panic behavior
-- Deferred functions during panic
-- Recover inside deferred functions
-- Appropriate use of `panic`
+- [x] Deferred execution
+- [x] LIFO order
+- [x] Cleanup
+- [x] Deferred arguments evaluated immediately
+- [x] Deferred closures reading variables later
+- [x] Panic behavior
+- [x] Deferred functions during panic
+- [x] Recover inside deferred functions
+- [x] Appropriate use of `panic`
 
 Important understanding:
 
@@ -256,21 +254,21 @@ reads the variable when the deferred closure executes.
 
 Completed:
 
-- `go mod init`
-- `go.mod`
-- Module path
-- Import path resolution
-- Module vs package
-- Package as a compile-time namespace and compilation unit
-- Package-level initialization
-- Package-level variables
-- `package main`
-- Exported and unexported identifiers
-- Files in the same directory compiling as one package
-- Package compilation and caching
-- Linking packages into an executable
-- `cmd` directories
-- `internal` directories
+- [x] `go mod init`
+- [x] `go.mod`
+- [x] Module path
+- [x] Import path resolution
+- [x] Module vs package
+- [x] Package as a compile-time namespace and compilation unit
+- [x] Package-level initialization
+- [x] Package-level variables
+- [x] `package main`
+- [x] Exported and unexported identifiers
+- [x] Files in the same directory compiling as one package
+- [x] Package compilation and caching
+- [x] Linking packages into an executable
+- [x] `cmd` directories
+- [x] `internal` directories
 
 Important understanding:
 
@@ -286,16 +284,16 @@ Important understanding:
 
 Completed:
 
-- Strings are immutable.
-- String indexing returns bytes.
-- `len(string)` returns bytes.
-- `[]rune(string)` counts Unicode code points.
-- `range` decodes UTF-8.
-- Byte indexes from `range`
-- `unicode/utf8`
-- `strings.Builder`
-- String normalization
-- Unicode-safe reversal
+- [x] Strings are immutable.
+- [x] String indexing returns bytes.
+- [x] `len(string)` returns bytes.
+- [x] `[]rune(string)` counts Unicode code points.
+- [x] `range` decodes UTF-8.
+- [x] Byte indexes from `range`
+- [x] `unicode/utf8`
+- [x] `strings.Builder`
+- [x] String normalization
+- [x] Unicode-safe reversal
 
 Important understanding of:
 
@@ -314,20 +312,20 @@ text = text[:len(text)-size]
 
 Completed:
 
-- `os.WriteFile`
-- `os.ReadFile`
-- `os.Create`
-- `os.Open`
-- `os.OpenFile`
-- Append flags
-- File permissions
-- `defer file.Close()`
-- `bufio.Scanner`
-- Scanner error checking
-- `bufio.Writer`
-- `Flush`
-- Relative paths
-- Empty files vs missing files
+- [x] `os.WriteFile`
+- [x] `os.ReadFile`
+- [x] `os.Create`
+- [x] `os.Open`
+- [x] `os.OpenFile`
+- [x] Append flags
+- [x] File permissions
+- [x] `defer file.Close()`
+- [x] `bufio.Scanner`
+- [x] Scanner error checking
+- [x] `bufio.Writer`
+- [x] `Flush`
+- [x] Relative paths
+- [x] Empty files vs missing files
 
 Important edge case:
 
@@ -338,17 +336,17 @@ Important edge case:
 
 Completed:
 
-- `json.Marshal`
-- `json.MarshalIndent`
-- `json.Unmarshal`
-- Struct tags
-- `omitempty`
-- `json:"-"`
-- Exported fields
-- Slices of structs
-- File persistence
-- `json.NewEncoder`
-- `json.NewDecoder`
+- [x] `json.Marshal`
+- [x] `json.MarshalIndent`
+- [x] `json.Unmarshal`
+- [x] Struct tags
+- [x] `omitempty`
+- [x] `json:"-"`
+- [x] Exported fields
+- [x] Slices of structs
+- [x] File persistence
+- [x] `json.NewEncoder`
+- [x] `json.NewDecoder`
 
 ### Phase 1 final project
 
@@ -484,26 +482,26 @@ The project has already been refactored so the CLI injects `JSONRepository` into
 
 Remaining topics:
 
-- Custom error types
-- Error design and error boundaries
-- Configuration
-- Environment variables
-- Constructor design
-- Package API design
-- Interface placement
-- Dependency direction
-- Avoiding unnecessary interfaces
-- Naming conventions
-- `internal` package usage
-- `cmd` package usage
-- `go.mod` and `go.sum` in depth
-- Dependency management
-- `go fmt`
-- `go vet`
-- Static analysis
-- Basic linting
-- Refactoring service and repository boundaries
-- In-memory repository implementation
+- [x] Custom error types
+- [x] Error design and error boundaries
+- [x] Configuration
+- [x] Environment variables
+- [x] Constructor design
+- [x] Package API design
+- [ ] Interface placement
+- [ ] Dependency direction
+- [ ] Avoiding unnecessary interfaces
+- [ ] Naming conventions
+- [ ] `internal` package usage
+- [ ] `cmd` package usage
+- [ ] `go.mod` and `go.sum` in depth
+- [ ] Dependency management
+- [ ] `go fmt`
+- [ ] `go vet`
+- [ ] Static analysis
+- [ ] Basic linting
+- [ ] Refactoring service and repository boundaries
+- [ ] In-memory repository implementation
 
 Expected Phase 2 project outcome:
 
@@ -517,21 +515,21 @@ Expected Phase 2 project outcome:
 
 Topics:
 
-- `testing` package
-- Unit tests
-- Table-driven tests
-- Subtests
-- Test helpers
-- Testing sentinel errors
-- Testing wrapped errors
-- Fakes and stubs
-- In-memory repositories
-- Testing service logic
-- Testing file repositories
-- Coverage
-- Benchmarks
-- Race detector
-- Fuzz testing
+- [ ] `testing` package
+- [ ] Unit tests
+- [ ] Table-driven tests
+- [ ] Subtests
+- [ ] Test helpers
+- [ ] Testing sentinel errors
+- [ ] Testing wrapped errors
+- [ ] Fakes and stubs
+- [ ] In-memory repositories
+- [ ] Testing service logic
+- [ ] Testing file repositories
+- [ ] Coverage
+- [ ] Benchmarks
+- [ ] Race detector
+- [ ] Fuzz testing
 
 Commands:
 
@@ -556,23 +554,23 @@ Project outcome:
 
 Topics:
 
-- `net/http`
-- `http.Handler`
-- `http.HandlerFunc`
-- Routing
-- Methods
-- Headers
-- Request bodies
-- JSON requests
-- JSON responses
-- Status codes
-- Middleware
-- API validation
-- Context
-- Timeouts
-- Graceful shutdown
-- Structured logging
-- API error responses
+- [ ] `net/http`
+- [ ] `http.Handler`
+- [ ] `http.HandlerFunc`
+- [ ] Routing
+- [ ] Methods
+- [ ] Headers
+- [ ] Request bodies
+- [ ] JSON requests
+- [ ] JSON responses
+- [ ] Status codes
+- [ ] Middleware
+- [ ] API validation
+- [ ] Context
+- [ ] Timeouts
+- [ ] Graceful shutdown
+- [ ] Structured logging
+- [ ] API error responses
 
 Project outcome:
 
@@ -590,20 +588,20 @@ DELETE /tasks/{id}
 
 Topics:
 
-- `database/sql`
-- PostgreSQL
-- Connection pooling
-- Queries
-- Inserts
-- Updates
-- Deletes
-- Transactions
-- Context-aware queries
-- Database errors
-- Repository pattern
-- Migrations
-- Integration tests
-- Docker Compose
+- [ ] `database/sql`
+- [ ] PostgreSQL
+- [ ] Connection pooling
+- [ ] Queries
+- [ ] Inserts
+- [ ] Updates
+- [ ] Deletes
+- [ ] Transactions
+- [ ] Context-aware queries
+- [ ] Database errors
+- [ ] Repository pattern
+- [ ] Migrations
+- [ ] Integration tests
+- [ ] Docker Compose
 
 Project outcome:
 
@@ -616,23 +614,23 @@ Project outcome:
 
 Topics:
 
-- Goroutines
-- Channels
-- Buffered and unbuffered channels
-- Directional channels
-- Closing channels
-- Comma-ok with channels
-- `select`
-- `sync.WaitGroup`
-- `sync.Mutex`
-- `sync.RWMutex`
-- Worker pools
-- Fan-out and fan-in
-- Context cancellation
-- Timeouts
-- Backpressure
-- Race conditions
-- Goroutine leaks
+- [ ] Goroutines
+- [ ] Channels
+- [ ] Buffered and unbuffered channels
+- [ ] Directional channels
+- [ ] Closing channels
+- [ ] Comma-ok with channels
+- [ ] `select`
+- [ ] `sync.WaitGroup`
+- [ ] `sync.Mutex`
+- [ ] `sync.RWMutex`
+- [ ] Worker pools
+- [ ] Fan-out and fan-in
+- [ ] Context cancellation
+- [ ] Timeouts
+- [ ] Backpressure
+- [ ] Race conditions
+- [ ] Goroutine leaks
 
 Project outcome:
 
@@ -649,25 +647,25 @@ Build a concurrent URL checker with:
 
 Topics:
 
-- Configuration
-- Environment variables
-- Structured logging with `log/slog`
-- Graceful shutdown
-- Health endpoints
-- Readiness endpoints
-- Authentication
-- Authorization
-- Password hashing
-- Retry strategies
-- Idempotency
-- Rate limiting
-- Metrics
-- Tracing
-- Security checks
-- Vulnerability scanning
-- Docker
-- Multi-stage builds
-- Deployment fundamentals
+- [ ] Configuration
+- [ ] Environment variables
+- [ ] Structured logging with `log/slog`
+- [ ] Graceful shutdown
+- [ ] Health endpoints
+- [ ] Readiness endpoints
+- [ ] Authentication
+- [ ] Authorization
+- [ ] Password hashing
+- [ ] Retry strategies
+- [ ] Idempotency
+- [ ] Rate limiting
+- [ ] Metrics
+- [ ] Tracing
+- [ ] Security checks
+- [ ] Vulnerability scanning
+- [ ] Docker
+- [ ] Multi-stage builds
+- [ ] Deployment fundamentals
 
 Important commands:
 

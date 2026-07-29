@@ -15,6 +15,12 @@ type Config struct {
 	TaskFile string
 }
 
+func NewConfig() Config {
+	return Config{
+		TaskFile: "tasks.json",
+	}
+}
+
 func printUsage() {
 	fmt.Println("Usage:")
 	fmt.Println(`  go run . add "Task title"`)
@@ -129,9 +135,7 @@ func parseIDArgument() (int, bool) {
 }
 
 func main() {
-	cfg := Config{
-		TaskFile: "tasks.json",
-	}
+	cfg := NewConfig()
 
 	if value := os.Getenv("TASKS_FILE"); value != "" {
 		cfg.TaskFile = value
