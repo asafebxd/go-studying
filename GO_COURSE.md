@@ -488,7 +488,7 @@ Remaining topics:
 - [x] Environment variables
 - [x] Constructor design
 - [x] Package API design
-- [ ] Interface placement
+- [x] Interface placement
 - [ ] Dependency direction
 - [ ] Avoiding unnecessary interfaces
 - [ ] Naming conventions
